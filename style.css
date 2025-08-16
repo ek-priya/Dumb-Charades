@@ -100,3 +100,38 @@ button:active {
     font-size: 28px; /* slightly smaller emojis */
   }
 }
+
+@media (max-height: 500px) and (orientation: landscape) {
+  body {
+    flex-direction: row; /* place content side by side instead of stacked */
+    padding: 10px;
+  }
+
+  .container {
+    max-width: 60%;      /* shrink width to fit side by side */
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  #movie {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 16px;
+    width: auto;  /* don’t stretch full width in horizontal */
+    min-width: 120px;
+  }
+
+  .emoji {
+    font-size: 22px; /* smaller emojis so they don’t cover UI */
+    opacity: 0.4;
+  }
+}
