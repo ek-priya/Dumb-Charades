@@ -1,0 +1,102 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #012af8, #02bef7);
+  overflow: hidden;
+}
+
+/* Floating emoji stickers */
+.emoji {
+  position: absolute;
+  font-size: 40px;
+  opacity: 0.6;
+  animation: float 10s infinite linear;
+}
+
+@keyframes float {
+  from { transform: translateY(100vh) rotate(0deg); }
+  to { transform: translateY(-10vh) rotate(360deg); }
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  z-index: 2;
+}
+
+h1 {
+  color: #222;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px #08adfa;
+}
+
+#movie {
+  margin: 20px 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #444;
+  min-height: 40px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #fcfcfd;
+  box-shadow: inset 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 14px 28px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #012af8, #3fccf7);
+  color: rgb(248, 251, 251);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* for mobile view*/
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  #movie {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 12px 20px;
+    width: 100%; /* full-width button on mobile */
+  }
+
+  .emoji {
+    font-size: 28px; /* slightly smaller emojis */
+  }
+}
