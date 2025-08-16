@@ -47,3 +47,7 @@ Edit movies.json to add or remove movie names.
 Change emojis in index.html for your own fun theme 🎭😂🍿🎶
 
 Modify style.css to tweak colors, animations, or layout.
+
+##ScreenShot
+
+<img width="1902" height="871" alt="Image" src="https://github.com/user-attachments/assets/af5138a2-6df7-4364-907c-235a72004b17" />
